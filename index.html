@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>綠遊智行APP-低碳足跡智慧旅遊平台</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Material Symbols  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- ===== 頁首區塊 ===== -->
+    <!-- header告訴瀏覽器和搜尋引擎這裡是網頁的頂部標題區 -->
+    <header id="top">
+      <div class="container">
+        <h1>綠遊智行 APP</h1>
+        <p>低碳足跡智慧旅遊平台，讓每一次出發都對地球更好！</p>
+      </div>
+    </header>
+
+    <!-- ===== 導覽列區塊 ===== -->
+    <!-- nav專門用來放網頁的主要導覽連結 -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="#about">關於我們</a></li>
+          <li><a href="#features">核心功能</a></li>
+          <li><a href="#carbon-calc">減碳路線試算</a></li>
+          <li><a href="#media-contact">影音與連結</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ===== 主要內容區塊 ===== -->
+    <!-- main代表網頁的核心主要內容 -->
+    <main class="container">
+      <!-- ── 關於我們 ── -->
+      <!-- section代表一個獨立的內容區段，id屬性同時作為導覽列的錨點目標 -->
+      <section id="about">
+        <h2>
+          <span class="material-symbols-outlined">public</span>
+          解決碳排放資訊不透明的痛點
+        </h2>
+        <p>
+          隨著環保意識提升，許多旅客希望減少旅行時的碳足跡。然而，現今的旅遊平台缺乏透明的碳排放數據，導致旅客在選擇交通與住宿時，難以評估方案對環境的實際影響。
+        </p>
+        <p>
+          為此，團隊開發了「綠遊智行」APP。我們整合了低碳交通、生態住宿與在地化永續體驗，幫助旅客輕鬆實踐綠色旅遊。
+        </p>
+        <img src="/assets/Image1.png" alt="綠遊智行APP介面與低碳旅遊情境圖" />
+      </section>
+
+      <hr />
+
+      <!-- ── 核心功能 ── -->
+      <section id="features">
+        <h2><i class="fa-solid fa-lightbulb"></i> 四大創新功能</h2>
+        <p>透過最先進的技術，我們提供量身定制的低碳旅行體驗：</p>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined">route</span>
+            <strong>智慧路線規劃：</strong> AI
+            優化旅遊行程，平衡碳排放，並結合大眾交通與步行路線。
+          </li>
+          <li>
+            <i class="fa-solid fa-vr-cardboard"></i>
+            <strong>AR 環保導覽：</strong>利用 AR
+            技術展示當地環境、氣候保護資訊與景點碳足跡數據。
+          </li>
+          <li>
+            <span class="material-symbols-outlined">nature_people</span>
+            <strong>在地化永續體驗：</strong>
+            推薦環保工作坊、生態導覽，支持當地社區發展與綠色住宿。
+          </li>
+          <li>
+            <i class="fa-solid fa-leaf"></i>
+            <strong>個人碳足跡追蹤：</strong>
+            數據化呈現使用者的旅行碳足跡，並提供個人成就系統。
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- ── 減碳路線試算 ── -->
+      <section id="carbon-calc">
+        <h2>
+          <i class="fa-solid fa-map-location-dot"></i> 路線碳排對比展示
+          (專利核心)
+        </h2>
+        <p>
+          我們的專利演算法能自動為您試算並推薦最低碳的交通方式。以下為「高鐵桃園站」至「機場第二航廈」的示範對比：
+        </p>
+
+        <!-- ── 表格：路線碳排對比 ── -->
+        <table>
+          <!-- thead是表頭區域，放欄位名稱 -->
+          <thead>
+            <tr>
+              <th>路線方案</th>
+              <th>建議交通工具</th>
+              <th>預估時間</th>
+              <th>預估碳排放量</th>
+            </tr>
+          </thead>
+
+          <!-- tbody是表格的資料主體區域 -->
+          <tbody>
+            <tr>
+              <td><strong>第一路線 (系統推薦)</strong></td>
+              <td><i class="fa-solid fa-train"></i> 桃園捷運 (大眾運輸)</td>
+              <td>19 分鐘</td>
+              <td>低 (30g CO2)</td>
+            </tr>
+            <tr>
+              <td>第二路線</td>
+              <td><i class="fa-solid fa-car"></i> 私家車 / 計程車</td>
+              <td>25 分鐘</td>
+              <td>高 (50g CO2)</td>
+            </tr>
+            <tr>
+              <td>第三路線</td>
+              <td><i class="fa-solid fa-bus"></i> 接駁客運</td>
+              <td>30 分鐘</td>
+              <td>中 (40g CO2)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- ── 影音與連結 ── -->
+      <section id="media-contact">
+        <h2>
+          <span class="material-symbols-outlined">play_circle</span>
+          永續旅遊概念影片
+        </h2>
+
+        <!-- ── YouTube嵌入影片 ── -->
+        <div class="video-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2iZLlAEOkxQ?si=GfohtfZHj_6smNvh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- ── 圖文併排和外部資源區 ── -->
+        <div class="contact-flex-container">
+          <div class="contact-image">
+            <img src="assets/Image2.png" alt="數位與生態的連結" />
+          </div>
+          <div class="contact-info">
+            <h3>探索更多綠色資源</h3>
+            <p>
+              為您提供一些減碳資訊與觀光導覽，邀請您一同加入低碳生活的行列。
+            </p>
+            <ul class="resource-links">
+              <li>
+                <a href="https://www.taiwan.net.tw/" target="_blank"
+                  ><i class="fa-solid fa-external-link-alt"></i>
+                  交通部觀光署官網</a
+                >
+              </li>
+              <li>
+                <a href="https://www.moenv.gov.tw/" target="_blank"
+                  ><i class="fa-solid fa-external-link-alt"></i>
+                  環境部減碳宣導網</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== 頁尾區塊 ===== -->
+    <!-- footer放版權聲明、作者資訊、聯絡方式等 -->
+    <footer>
+      <div class="container">
+        <p><strong>綠遊智行研發團隊</strong></p>
+        <p>網頁製作：范祐綸</p>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          聯絡信箱：11310303@gm.chihlee.edu.tw
+        </p>
+        <p>&copy; 2026 綠遊智行 (專利證書：新型第 M668877 號)</p>
+        <p><a href="#top">回到網頁頂部</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
