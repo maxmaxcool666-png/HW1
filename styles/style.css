@@ -1,0 +1,171 @@
+/* 全域設定，套用到整個<body> */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f7f4;
+  color: #333333;
+  line-height: 1.8;
+}
+
+/* 設定最大寬度並水平置中，header、nav、main、footer 都有套用 */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 頁首樣式對應HTML的<header>標籤 */
+header {
+  background-color: #2d6a4f;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* 導覽列樣式對應HTML的<nav>標籤 */
+nav {
+  background-color: #40916c;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #1b4332;
+}
+
+/* 主要內容區對應HTML的<main class="container"> */
+main.container {
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #2d6a4f;
+  border-bottom: 2px solid #95d5b2;
+  padding-bottom: 10px;
+}
+
+/* 表格樣式對應HTML的<table>、<th>、<td> */
+table {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #40916c;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f9f5;
+}
+
+tbody tr:hover {
+  background-color: #d8f3e3;
+}
+
+/* 圖片樣式對應HTML的<img>標籤 */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* 圖文併排樣式對應HTML的<div class="contact-image"> */
+.contact-image {
+  flex: 1;
+  transition: 0.5s;
+}
+
+.contact-image:hover {
+  transform: scale(1.02);
+}
+
+/* 影片置中對應HTML的<div class="video-wrapper"> */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* 聯絡區圖文併排對應HTML的<div class="contact-flex-container"> */
+.contact-flex-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f9fdfb;
+  padding: 20px;
+  border: 1px solid #e0eee6;
+  border-radius: 10px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+/* 外部資源連結清單對應HTML的<ul class="resource-links"> */
+.resource-links {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-links li {
+  margin-bottom: 10px;
+}
+
+.resource-links a {
+  color: #2d6a4f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resource-links a:hover {
+  color: #40916c;
+}
+
+/* 頁尾樣式對應HTML的<footer>標籤 */
+footer {
+  background-color: #1b4332;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: #95d5b2;
+}
